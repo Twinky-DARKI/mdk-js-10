@@ -1,0 +1,48 @@
+.tabs {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+    margin: 20px;
+    color: white;
+}
+
+body {
+    background: white;
+}
+
+.tab, #modal {
+    cursor: pointer;
+    transition: color 300ms ease-in-out;
+}
+
+.tab:hover, #modal:hover {
+    color: skyblue;
+}
+
+.tab.active {
+    color: skyblue;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid whitesmoke;
+    height: 86svh;
+    border-radius: 5px;
+}
